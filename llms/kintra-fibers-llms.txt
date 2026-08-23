@@ -1,0 +1,54 @@
+# Kintra Fibers
+
+> Kintra Fibers is a Brooklyn, New York materials-science company that makes a bio-based,
+> biodegradable synthetic yarn as an alternative to petroleum polyester. Its polymer is a
+> proprietary form of polybutylene succinate (PBS) made from renewable corn- and wheat-derived
+> sugars and melt-spun on the same commercial equipment already used for polyester, so mills,
+> spinners and extruders can adopt it without re-tooling. Kintra sells physical materials into
+> the apparel supply chain, not software: as of 2026-08-23 it publishes no public API, no
+> developer portal, no SDK, and no machine-readable API contract.
+
+## Products
+
+Kintra sells four physical products, each aimed at a different tier of the apparel supply chain:
+
+- **Resin** — for extruders. Bio-based resin compatible with existing polyester systems.
+- **Staple fiber** — for spinners. Soft, breathable fiber for blends.
+- **Multifilament yarn** — for mills. 75D/72F, available as FDY, ATY and DTY.
+- **Fabric** — for brands. Finished performance textiles.
+
+## APIs
+
+Kintra Fibers publishes no public API. Contract discovery on 2026-08-23 probed
+www.kintrafibers.com, kintrafibers.com and api.kintrafibers.com for OpenAPI, Swagger,
+GraphQL, MCP, llms.txt, sitemap and A2A agent cards and found none; api.kintrafibers.com
+does not resolve. There is no GitHub organization (github.com/kintrafibers and
+github.com/kintra both 404) and no first-party package on npm or PyPI. See the
+`x-coverage` block in apis.yml for the probed URLs and their HTTP statuses.
+
+The public site is a Webflow build of the commercial "GENTLE" e-commerce template. Several
+template routes are still served unmodified with placeholder copy and are not Kintra content:
+/blog, /careers and /privacy-policy all return HTTP 200 with the template title
+"GENTLE - Webflow Ecommerce Website Template" and lorem-ipsum body text. They are deliberately
+NOT linked as company pages below.
+
+## Company
+
+- [Website](https://www.kintrafibers.com/): Company site.
+- [About](https://www.kintrafibers.com/about-us): Company history and milestone timeline.
+- [Sustainability](https://www.kintrafibers.com/sustainability): Environmental claims and testing.
+- [Contact / Work With Us](https://www.kintrafibers.com/contact): Contact form; info@kintrafibers.com.
+- [LinkedIn](https://www.linkedin.com/company/kintrafibers)
+
+## Artifacts
+
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/kintra-fibers/refs/heads/main/security/kintra-fibers-domain-security.yml): Probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for kintrafibers.com.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/kintra-fibers/refs/heads/main/well-known/kintra-fibers-well-known.yml): Every canonical /.well-known/ path, probed; all 404.
+
+## Notes
+
+- This is an API Evangelist third-party profile assembled from publicly reachable material.
+  See README.md.
+- generated: 2026-08-23
+- method: generated
+- source: apis.yml + repo artifacts + live probes of www.kintrafibers.com

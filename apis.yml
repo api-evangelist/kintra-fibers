@@ -1,17 +1,39 @@
 aid: kintra-fibers
 name: Kintra Fibers
-description: 'Kintra Fibers is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Kintra Fibers is a Brooklyn, New York materials-science company that has
+  developed a proprietary bio-based and biodegradable synthetic yarn as an alternative
+  to conventional petroleum polyester. Its polymer is a novel form of polybutylene
+  succinate (PBS) made from renewable corn- and wheat-derived sugar feedstocks, melt-spun
+  on the same commercial equipment already used for polyester so that mills, spinners
+  and extruders can adopt it without re-tooling. The company sells four physical products
+  into the apparel supply chain — resin for extruders, staple fiber for spinners, 75D/72F
+  multifilament yarn in FDY, ATY and DTY forms for mills, and finished performance fabric
+  for brands. Co-founded by Billy McCall and Alissa Baier-Lentz, Kintra runs an in-house
+  resin and fiber science lab in Brooklyn, launched a Fashion for Good consortium with
+  Inditex, Bestseller and Reformation, and closed a funding round led by H&M Group. Kintra
+  is a manufacturer of physical materials, not a software company: it operates no developer
+  program, publishes no public API, SDK, webhook or machine-readable API contract, and its
+  only web property is a Webflow marketing and contact site.'
+image: https://cdn.prod.website-files.com/686faf8e945540977b7e15ab/68c03021964251e1fb786fdd_Screenshot%202025-09-09%20at%203.48.06%E2%80%AFPM.png
 url: https://raw.githubusercontent.com/api-evangelist/kintra-fibers/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-23'
 modified: '2026-08-23'
 tags:
 - Company
+- Materials Science
+- Textiles
+- Apparel
+- Fashion
+- Biomaterials
+- Sustainability
+- Manufacturing
+- Supply Chain
+- Climate Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,51 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kintra-fibers-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.kintrafibers.com/
+- type: About
+  url: https://www.kintrafibers.com/about-us
+- type: Sustainability
+  url: https://www.kintrafibers.com/sustainability
+- type: Contact
+  url: https://www.kintrafibers.com/contact
+- type: Support
+  url: https://www.kintrafibers.com/contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/kintrafibers
+- type: LLMsTxt
+  url: llms/kintra-fibers-llms.txt
+
+x-enrichment:
+  date: '2026-08-23'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Kintra Fibers manufactures a bio-based PBS polyester substitute sold as resin,
+    staple fiber, 75D/72F yarn and fabric to extruders, spinners, mills and apparel brands;
+    its only web property is a Webflow marketing site built on the off-the-shelf GENTLE
+    e-commerce template whose /blog, /careers and /privacy-policy routes still return the
+    vendor's lorem-ipsum placeholder copy, and every OpenAPI, GraphQL, MCP, llms.txt and
+    agent-card path on it returns 404 while api.kintrafibers.com does not resolve at all.
+  evidence:
+  - url: https://www.kintrafibers.com/
+    status: 200
+  - url: https://www.kintrafibers.com/openapi.json
+    status: 404
+  - url: https://www.kintrafibers.com/graphql
+    status: 404
+  - url: https://www.kintrafibers.com/llms.txt
+    status: 404
+  - url: https://www.kintrafibers.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.kintrafibers.com/.well-known/security.txt
+    status: 404
+  - url: https://api.github.com/orgs/kintrafibers
+    status: 404
+  checked: '2026-08-23'

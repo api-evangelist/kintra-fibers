@@ -1,0 +1,39 @@
+generated: '2026-08-23'
+method: probed
+source: https://www.kintrafibers.com/.well-known/
+note: >-
+  Probed every canonical /.well-known/ path on the only host Kintra Fibers operates
+  (www.kintrafibers.com; kintrafibers.com 301s to it, and api.kintrafibers.com does not
+  resolve). Every path returned a real 404 from the Webflow origin — an 88-byte text/html
+  body, not an SPA shell answering 200. Nothing is served, so NO WellKnown or SecurityTxt
+  pointer is emitted in apis.yml; this file records a measured absence, not a presence.
+hosts:
+- host: www.kintrafibers.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: api.kintrafibers.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+    note: host does not resolve (NXDOMAIN)

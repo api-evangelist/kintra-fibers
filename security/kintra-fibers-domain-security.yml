@@ -1,0 +1,16 @@
+generated: '2026-08-23'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.kintrafibers.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 25 09:16:09 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: kintrafibers.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
