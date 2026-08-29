@@ -14,6 +14,17 @@ description: 'Kintra Fibers is a Brooklyn, New York materials-science company th
   is a manufacturer of physical materials, not a software company: it operates no developer
   program, publishes no public API, SDK, webhook or machine-readable API contract, and its
   only web property is a Webflow marketing and contact site.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/686faf8e945540977b7e15ab/68c03021964251e1fb786fdd_Screenshot%202025-09-09%20at%203.48.06%E2%80%AFPM.png
 url: https://raw.githubusercontent.com/api-evangelist/kintra-fibers/refs/heads/main/apis.yml
 x-type: company
